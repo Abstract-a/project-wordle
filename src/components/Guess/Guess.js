@@ -1,14 +1,16 @@
 import React from 'react';
+import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
+import { range } from '../../utils';
 
 function Guess({ word }) {
   return (
     <div className="guess-result">
       <p className="guess">
-        <span className="cell">{word ? word[0] : ''}</span>
-        <span className="cell">{word ? word[1] : ''}</span>
-        <span className="cell">{word ? word[2] : ''}</span>
-        <span className="cell">{word ? word[3] : ''}</span>
-        <span className="cell">{word ? word[4] : ''}</span>
+        {range(5).map((num) => (
+          <span className="cell" key={num}>
+            {word ? word[num] : undefined}
+          </span>
+        ))}
       </p>
     </div>
   );
