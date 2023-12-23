@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles.css';
+import '../../styles.css';
 
 const GuessInput = () => {
   const [guess, setGuess] = useState({ guess: '' });
