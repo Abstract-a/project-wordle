@@ -2,16 +2,16 @@ import { useState } from 'react';
 import '../../styles.css';
 
 const GuessInput = () => {
-  const [guess, setGuess] = useState({ guess: '' });
+  const [guess, setGuess] = useState('');
 
   function handleChange(e) {
-    setGuess({ ...guess, guess: e.target.value.toUpperCase() });
+    setGuess(e.target.value.toUpperCase());
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(guess);
-    setGuess({ guess: '' });
+    console.log({ guess });
+    setGuess('');
   }
 
   return (
@@ -25,7 +25,7 @@ const GuessInput = () => {
           name="guess"
           id="guess-input"
           onChange={handleChange}
-          value={guess.guess}
+          value={guess}
         />
       </form>
     </>
