@@ -1,7 +1,5 @@
 # Word Game
 
-## Joy of React, Project I
-
 In this project, we'll recreate a popular online word game, Wordle:
 
 ![Demo showing the finished product, our Wordle clone](docs/wordle-demo.gif)
@@ -225,10 +223,7 @@ The user wins the game when their guessed word is identical to the `answer`. The
 
 ```html
 <div class="happy banner">
-  <p>
-    <strong>Congratulations!</strong> Got it in
-    <strong>3 guesses</strong>.
-  </p>
+  <p><strong>Congratulations!</strong> Got it in <strong>3 guesses</strong>.</p>
 </div>
 ```
 

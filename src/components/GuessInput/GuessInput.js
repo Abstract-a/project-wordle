@@ -20,7 +20,7 @@ const GuessInput = ({ handleSub }) => {
   return (
     <>
       <form className="guess-input-wrapper" onSubmit={handleSubmit}>
-        <label htmlFor="guess">Enter a Guess</label>
+        <label htmlFor="guess-input">Enter a Guess</label>
         <input
           required
           pattern="\w{5,5}"
