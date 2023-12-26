@@ -21,10 +21,7 @@ function Game() {
 
   return (
     <>
-      {/* {range(0, NUM_OF_GUESSES_ALLOWED).map((item) => (
-        <Guess word={guesses[guesses.length - 1]} />
-      ))} */}
-      <GuessList guesses={guesses} />
+      <GuessList guesses={guesses} answer={answer} />
       <GuessInput handleSub={handleSubmit} />
     </>
   );
